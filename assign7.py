@@ -10,7 +10,7 @@ def histogram(s):
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"]
-test_miss = ["zzz","subdermatoglyphic","the quick brown fox jumps over the lazy dog"]
+test_miss = ["zzz","subdermatoglyphic"," quick brown fox jumps over the lazy dog"]
 
 def has_duplicates(s):
 
