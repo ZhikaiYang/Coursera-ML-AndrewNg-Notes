@@ -1,16 +1,17 @@
 def histogram(s):
-     d = dict()
-     for c in s:
-          if c not in d:
-               d[c] = 1
-          else:
-               d[c] += 1
-     return d
+    d = dict()
+    for c in s:
+        if c not in d:
+            d[c] = 1
+        else:
+            d[c] += 1
+    return d
 
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"]
-test_miss = ["zzz","subdermatoglyphic"," quick brown fox jumps over the lazy dog"]
+test_dups = ["zzz", "dog", "bookkeeper", "subdermatoglyphic", "subdermatoglyphics"]
+test_miss = ["zzz", "subdermatoglyphic", " quick brown fox jumps over the lazy dog"]
+
 
 def has_duplicates(s):
 
@@ -25,14 +26,12 @@ def has_duplicates(s):
     return result
 
 
-
 for element in test_dups:
     if has_duplicates(element):
         print(element, " has duplicates")
 
     else:
         print(element, "has no duplicates")
-
 
 
 def missing_letters(s):
@@ -45,8 +44,9 @@ def missing_letters(s):
         if not(letter in s):
             t.append(i)
 
-        i = i +1
+        i = i + 1
     return t
+
 
 miss = ""
 for element in test_miss:
