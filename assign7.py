@@ -1,3 +1,7 @@
+import sys
+print(sys.version)
+
+
 def histogram(s):
     d = dict()
     for c in s:
